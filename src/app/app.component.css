@@ -1,0 +1,36 @@
+.background-logo-container {
+	background-image: url(../assets/images/background.jpg);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	position: absolute;
+	z-index: -1;
+	height: 100vh;
+	width: 100vw;
+}
+img {
+	align-self: center;
+	mix-blend-mode: overlay;
+}
+
+.video-container {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	align-items: flex-end;
+	height: 100vh;
+}
+video {
+	margin: 0 auto;
+	display: block;
+	height: 95%;
+}
+
+@media (max-width: 992px) {
+	img {
+		max-width: 290px;
+	}
+	video {
+		height: 500px;
+	}
+}
